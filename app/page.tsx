@@ -8,8 +8,6 @@ interface Project {
   provider: string;
   competencies: string[];
   reflection: string;
-  linkText: string;
-  linkUrl: string;
 }
 // --- Configuration ---
 const config = {
@@ -165,10 +163,6 @@ const ProjectCard = ({ project }: { project: Project }) => (
         "{project.reflection}"
       </blockquote>
     </div>
-
-    <a href={project.linkUrl} className={`mt-6 block text-center font-bold text-sm underline hover:${config.colors.primary} transition-colors duration-200`}>
-      {project.linkText}
-    </a>
   </div>
 );
 
