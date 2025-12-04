@@ -227,16 +227,17 @@ const VideoPlaceholder = () => (
         This video artifact demonstrates my ability to present complex technical concepts clearly and concisely (meeting Rubric 3).
       </p>
       
-      {/* MINIMAL Vimeo Embed Integration (Vertical Aspect Ratio) */}
+      {/* FINAL STYLING FIX: Use a fixed max-width container and let the video define its height */}
       <div className="flex justify-center">
-        {/* We use the custom padding-top trick for maintaining the vertical aspect ratio (9:16) */}
-        <div style={{ padding: '177.78% 0 0 0', position: 'relative', width: '384px' }} className="rounded-lg overflow-hidden shadow-2xl border-4 border-teal-600">
+        {/* max-w-xs sets a max width of 320px, suitable for a vertical phone screen format */}
+        <div className="max-w-xs rounded-lg overflow-hidden shadow-2xl border-4 border-teal-600">
           <iframe 
             // Simplified URL: Just the video ID is needed for a public embed to maximize compatibility
             src="https://player.vimeo.com/video/1143296303?autoplay=0&loop=0" 
             frameBorder="0" 
             allow="autoplay; fullscreen; picture-in-picture" 
-            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+            // We set width/height to 100% to fill the new container
+            style={{ width: '100%', height: '100%', aspectRatio: '9 / 16' }}
             title="Portfolio Video"
           ></iframe>
         </div>
