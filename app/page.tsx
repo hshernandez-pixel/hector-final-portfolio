@@ -1,6 +1,16 @@
 import React from 'react';
 import { Briefcase, Zap, User, Code, Mail, Video, TrendingUp } from 'lucide-react';
-
+// --- TypeScript Interface Declaration ---
+interface Project {
+  icon: JSX.Element;
+  title: string;
+  description: string;
+  provider: string;
+  competencies: string[];
+  reflection: string;
+  linkText: string;
+  linkUrl: string;
+}
 // --- Configuration ---
 const config = {
   name: "Hector Steve Hernandez",
