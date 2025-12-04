@@ -71,16 +71,16 @@ const projects = [
 ];
 
 const skills = [
-  "Digital Media {'&'} Formats (Vast Experience)",
-  "Troubleshooting {'&'} Pattern Recognition",
-  "Cloud Computing (IaaS {'&'} Strategy)",
+  "Digital Media & Formats (Vast Experience)",
+  "Troubleshooting & Pattern Recognition",
+  "Cloud Computing (IaaS & Strategy)",
   "Management and Supervision",
-  "Cybersecurity (Threats {'&'} Management)",
+  "Cybersecurity (Threats & Management)",
   "Technology Trends (Deep Knowledge)",
   "Python (Experience)",
   "MS Office Suite (Proficient)",
   "Google Suite (Proficient)",
-  "Bilingual: Spanish {'&'} English (Proficient)",
+  "Bilingual: Spanish & English (Proficient)",
   "Portuguese (Able to understand)",
 ];
 
@@ -189,7 +189,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
     <div className="mt-6 pt-4 border-t border-gray-700 flex-grow">
       <h4 className="font-semibold text-gray-300 flex items-center mb-2">
         <TrendingUp size={16} className={`mr-2 ${config.colors.primary}`} />
-        Reflection {'&'} Growth
+        Reflection & Growth
       </h4>
       <blockquote className="text-sm italic border-l-4 border-teal-500 pl-4 text-gray-400">
         {project.reflection}
@@ -218,7 +218,7 @@ const Skills = () => (
   <section id="skills" className={`py-16 md:py-24 ${config.colors.card} border-t border-b border-gray-800`}>
     <div className="container mx-auto px-6">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-        Core Competencies {'&'} Skills
+        Core Competencies & Skills
       </h2>
 
       <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-4">
@@ -325,7 +325,7 @@ const About = () => (
 const Footer = () => (
   <footer className={`p-8 ${config.colors.card} border-t border-gray-700 text-center`}>
     <p className={`text-sm ${config.colors.text}`}>
-      &copy; {new Date().getFullYear()} {config.name}. Built with clean, efficient code (React {'&'} Tailwind CSS).
+      &copy; {new Date().getFullYear()} {config.name}. Built with clean, efficient code (React & Tailwind CSS).
     </p>
   </footer>
 );
