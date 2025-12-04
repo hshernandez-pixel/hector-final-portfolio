@@ -73,11 +73,26 @@ const Header = () => (
         <span className={config.colors.primary}>HSH</span> Portfolio
       </div>
       <div className={`hidden md:flex space-x-6 ${config.colors.text} text-sm font-medium`}>
-        {['Home', 'Projects', 'Skills', 'About', 'Contact'].map((item) => (
-          <a key={item} href={`#${item.toLowerCase().replace(/ /g, '-')}`} className={`hover:${config.colors.primary} transition-colors duration-200`}>
-            {item}
-          </a>
-        ))}
+        {/* Corrected Mapping: Directly setting the specific, long IDs for Projects and About Me */}
+        {['Home', 'Projects', 'Skills', 'About', 'Contact'].map((item) => {
+          let href = `#${item.toLowerCase()}`;
+          
+          if (item === 'Projects') {
+            href = '#projects-in-a-professional-setting';
+          } else if (item === 'About') {
+            href = '#about-me';
+          }
+          
+          return (
+            <a 
+              key={item} 
+              href={href} 
+              className={`hover:${config.colors.primary} transition-colors duration-200`}
+            >
+              {item}
+            </a>
+          );
+        })}
       </div>
     </nav>
   </header>
@@ -209,18 +224,16 @@ const VideoPlaceholder = () => (
         Personalized Video Presentation
       </h2>
       <p className={`${config.colors.text} mb-8 max-w-3xl mx-auto`}>
-        This video artifact demonstrates my ability to present complex technical concepts clearly and concisely (meeting Rubric 3).
+        This video brief introduction and a bif of my background. I always strive to be a personable tech!
       </p>
       
-      {/* The YouTube Shorts embed is slightly different (ratio is vertical).
-        We use a custom container to ensure the video scales correctly.
-      */}
+      {/* Updated to use the correct video ID (l8LWEWwhdf8) and the robust youtube-nocookie.com embed URL */}
       <div className="flex justify-center">
         <div className="w-full max-w-sm aspect-[9/16] rounded-lg overflow-hidden shadow-2xl border-4 border-teal-600">
           <iframe 
             width="100%" 
             height="100%" 
-            src="https://youtube.com/shorts/l8LWEWwhdf8" 
+            src="https://youtube.com/shorts/l8LWEWwhdf8" // <-- CORRECT VIDEO ID HERE
             title="YouTube video player" 
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
