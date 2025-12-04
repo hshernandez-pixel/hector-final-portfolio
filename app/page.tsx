@@ -14,7 +14,7 @@ interface Project {
 // --- Configuration ---
 const config = {
   name: "Hector Steve Hernandez",
-  title: "Adept Digital Media {'&'} Infrastructure Specialist",
+  title: "Adept Digital Media & Infrastructure Specialist",
   tagline: "Strategic Leadership in Cloud Migration, Technical Operations, and High-Performance Team Management.",
   
   colors: {
