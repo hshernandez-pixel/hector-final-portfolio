@@ -14,7 +14,7 @@ interface Project {
 // --- Configuration ---
 const config = {
   name: "Hector Steve Hernandez",
-  title: "Adept Digital Media &amp; Infrastructure Specialist",
+  title: "Adept Digital Media {'&'} Infrastructure Specialist",
   tagline: "Strategic Leadership in Cloud Migration, Technical Operations, and High-Performance Team Management.",
   
   colors: {
@@ -71,16 +71,16 @@ const projects = [
 ];
 
 const skills = [
-  "Digital Media &amp; Formats (Vast Experience)",
-  "Troubleshooting &amp; Pattern Recognition",
-  "Cloud Computing (IaaS &amp; Strategy)",
+  "Digital Media {'&'} Formats (Vast Experience)",
+  "Troubleshooting {'&'} Pattern Recognition",
+  "Cloud Computing (IaaS {'&'} Strategy)",
   "Management and Supervision",
-  "Cybersecurity (Threats &amp; Management)",
+  "Cybersecurity (Threats {'&'} Management)",
   "Technology Trends (Deep Knowledge)",
   "Python (Experience)",
   "MS Office Suite (Proficient)",
   "Google Suite (Proficient)",
-  "Bilingual: Spanish &amp; English (Proficient)",
+  "Bilingual: Spanish {'&'} English (Proficient)",
   "Portuguese (Able to understand)",
 ];
 
@@ -189,7 +189,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
     <div className="mt-6 pt-4 border-t border-gray-700 flex-grow">
       <h4 className="font-semibold text-gray-300 flex items-center mb-2">
         <TrendingUp size={16} className={`mr-2 ${config.colors.primary}`} />
-        Reflection &amp; Growth
+        Reflection {'&'} Growth
       </h4>
       <blockquote className="text-sm italic border-l-4 border-teal-500 pl-4 text-gray-400">
         {project.reflection}
@@ -218,7 +218,7 @@ const Skills = () => (
   <section id="skills" className={`py-16 md:py-24 ${config.colors.card} border-t border-b border-gray-800`}>
     <div className="container mx-auto px-6">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-        Core Competencies &amp; Skills
+        Core Competencies {'&'} Skills
       </h2>
 
       <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-4">
@@ -306,7 +306,7 @@ const About = () => (
           I am a strategic media and technology specialist with a proven record of leading complex
           infrastructure projects and building high-performing technical teams. My background is
           rooted in hands-on troubleshooting and pattern recognition, which I leverage to develop robust,
-          long-term solutions—from facilitating large-scale on-premises to cloud migrations, to
+          long-term solutions from facilitating large-scale on-premises to cloud migrations, to
           consolidating international media workflows.
         </p>
 
@@ -325,7 +325,7 @@ const About = () => (
 const Footer = () => (
   <footer className={`p-8 ${config.colors.card} border-t border-gray-700 text-center`}>
     <p className={`text-sm ${config.colors.text}`}>
-      &copy; {new Date().getFullYear()} {config.name}. Built with clean, efficient code (React &amp; Tailwind CSS).
+      &copy; {new Date().getFullYear()} {config.name}. Built with clean, efficient code (React {'&'} Tailwind CSS).
     </p>
   </footer>
 );
