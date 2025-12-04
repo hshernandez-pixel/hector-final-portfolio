@@ -233,7 +233,7 @@ const VideoPlaceholder = () => (
         <div className="max-w-xs rounded-lg overflow-hidden shadow-2xl border-4 border-teal-600">
           <iframe 
             // Simplified URL: Just the video ID is needed for a public embed to maximize compatibility
-            src="https://player.vimeo.com/video/1143296303?autoplay=0&loop=0" 
+            src="https://player.vimeo.com/video/1143296303" 
             frameBorder="0" 
             allow="autoplay; fullscreen; picture-in-picture" 
             // We set width/height to 100% to fill the new container
