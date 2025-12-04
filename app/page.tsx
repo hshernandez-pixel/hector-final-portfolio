@@ -172,7 +172,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
     <div className="mt-6 pt-4 border-t border-gray-700 flex-grow">
       <h4 className="font-semibold text-gray-300 flex items-center mb-2">
         <TrendingUp size={16} className={`mr-2 ${config.colors.primary}`} />
-        Reflection & Growth
+        Reflection &amp; Growth
       </h4>
       <blockquote className="text-sm italic border-l-4 border-teal-500 pl-4 text-gray-400">
         "{project.reflection}"
@@ -224,7 +224,7 @@ const VideoPlaceholder = () => (
         Personalized Video Presentation
       </h2>
       <p className={`${config.colors.text} mb-8 max-w-3xl mx-auto`}>
-        This video is a brief video introduction. I've always strived to break the tech stereotype and be personable!
+        This video is a brief video introduction. I&apos;ve always strived to break the tech stereotype and be personable!
       </p>
       
       {/* FINAL STYLING FIX: Use a fixed max-width container and let the video define its height */}
@@ -250,7 +250,7 @@ const Contact = () => (
   <section id="contact" className={`py-16 md:py-24 ${config.colors.card}`}>
     <div className="container mx-auto px-6 text-center">
       <h2 className={`text-3xl md:text-4xl font-bold text-white mb-6`}>
-        Let's Connect
+      Let&apos;s Connect
       </h2>
       <p className={`${config.colors.text} mb-8 max-w-xl mx-auto`}>
         Ready to discuss how my expertise in digital media infrastructure and team leadership can benefit your organization?
