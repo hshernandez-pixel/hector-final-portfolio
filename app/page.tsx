@@ -134,7 +134,7 @@ const Hero = () => (
   </section>
 );
 
-const ProjectCard = ({ project }) => (
+const ProjectCard = ({ project }: { project: Project }) => (
   <div className={`p-6 rounded-lg shadow-2xl transition duration-300 ${config.colors.card} hover:shadow-teal-500/50 flex flex-col h-full`}>
     <div className="flex items-start space-x-4">
       <div className="p-3 bg-teal-800 rounded-full">{project.icon}</div>
