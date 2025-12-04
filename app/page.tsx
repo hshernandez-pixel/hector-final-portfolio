@@ -224,7 +224,7 @@ const VideoPlaceholder = () => (
         Personalized Video Presentation
       </h2>
       <p className={`${config.colors.text} mb-8 max-w-3xl mx-auto`}>
-      This video is a brief video introduction. I've always strived to break the tech stereotype and be personable!
+        This video is a brief video introduction. I've always strived to break the tech stereotype and be personable!
       </p>
       
       {/* FINAL STYLING FIX: Use a fixed max-width container and let the video define its height */}
