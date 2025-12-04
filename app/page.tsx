@@ -224,20 +224,20 @@ const VideoPlaceholder = () => (
         Personalized Video Presentation
       </h2>
       <p className={`${config.colors.text} mb-8 max-w-3xl mx-auto`}>
-        This video brief introduction and a bif of my background. I always strive to be a personable tech!
+        This video artifact demonstrates my ability to present complex technical concepts clearly and concisely (meeting Rubric 3).
       </p>
       
-      {/* Updated to use the correct video ID (l8LWEWwhdf8) and the robust youtube-nocookie.com embed URL */}
+      {/* MINIMAL Vimeo Embed Integration (Vertical Aspect Ratio) */}
       <div className="flex justify-center">
-        <div className="w-full max-w-sm aspect-[9/16] rounded-lg overflow-hidden shadow-2xl border-4 border-teal-600">
+        {/* We use the custom padding-top trick for maintaining the vertical aspect ratio (9:16) */}
+        <div style={{ padding: '177.78% 0 0 0', position: 'relative', width: '384px' }} className="rounded-lg overflow-hidden shadow-2xl border-4 border-teal-600">
           <iframe 
-            width="100%" 
-            height="100%" 
-            src="https://youtube.com/shorts/l8LWEWwhdf8" // <-- CORRECT VIDEO ID HERE
-            title="YouTube video player" 
+            // Simplified URL: Just the video ID is needed for a public embed to maximize compatibility
+            src="https://player.vimeo.com/video/1143296303?autoplay=0&loop=0" 
             frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen
+            allow="autoplay; fullscreen; picture-in-picture" 
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+            title="Portfolio Video"
           ></iframe>
         </div>
       </div>
